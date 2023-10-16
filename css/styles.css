@@ -52,10 +52,6 @@ p {
     font-family: Karla;
 }
 
-svg {
-    z-index: -1;
-}
-
 .site_wrapper {
     margin: 0 auto;
     width: 95%;
@@ -78,10 +74,10 @@ svg {
     margin-left: 50px;
     width: fit-content;
     line-height: 70px;
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center the list items */
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
 }
 
 .nav-image {
@@ -249,7 +245,7 @@ svg {
 /* Lifestyle Div */
 
 .lifestyle {
-    height: 100vh;
+    height: 110vh;
     min-height: 500px;
     background: rgba(255,236,185,1);
     color: #000;
@@ -442,7 +438,7 @@ svg {
 .currency img,
 .attractions img,
 .flights img {
-    height: 300px; /* Adjusted height */
+    height: 20vh; /* Adjusted height */
     object-fit: cover;
     position: relative;
     z-index: 2;
@@ -464,6 +460,10 @@ svg {
 .accomodations a { 
     text-decoration: none;
     color: #000;
+}
+
+.accomodations img {
+    align-self: center;
 }
 
 .currency { 
@@ -525,6 +525,80 @@ svg {
 
 /* Media Queries */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width:300px) and (max-width: 950px) {
     
+    ::-webkit-scrollbar {
+        width: 6px; 
+        border: 1px sold #000;
+    }
+
+    .header-menu-home {
+        margin-left: 0px;
+    }
+
+    .nav-image {
+        margin-left: 10px;
+    }
+    
+    .header-menu-items{
+        width: 50%;
+        padding-right: 20%;
+    }
+
+    .map {
+        height: 180vh;
+        display: block;
+    }
+
+    .map h1 {
+        padding-left: 10px;
+    }
+
+    .map-image img:first-child {
+        width: 80vw;
+        height: auto;
+    }
+
+    .lifestyle {
+        height: 180vh;
+    }
+
+    .lifestyle-div {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .lifestyle-div1 {
+        width: 90%;
+    }
+
+    .lifestyle-div2 {
+        width: 100%;
+    }
+
+    .history {
+        height: 180vh;
+    }
+
+    .history-div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .history-div1 {
+        width: 90%;
+    }
+
+    .history-div2 {
+        width: 100%;
+    }
+
+    .visit {
+        height: 180vh;
+    }
+
+    .visit_grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
 }
