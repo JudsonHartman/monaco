@@ -529,7 +529,7 @@ p {
 
 /* Media Queries */
 
-@media only screen and ((min-width:300px) and (max-width: 1000px) or (max-aspect-ratio: 1/1)) {
+@media only screen and ((min-width:300px) and (max-width: 1000px)) {
     
     ::-webkit-scrollbar {
         width: 6px; 
@@ -607,7 +607,7 @@ p {
     }
 }
 
-@media only screen and (((min-width:0px) and (max-width: 1000px)) or ((min-height:0px) and (max-height: 500px)) or (max-aspect-ratio: 1/1)){
+@media only screen and (((min-width:0px) and (max-width: 1000px)) or ((min-height:0px) and (max-height: 500px))){
     .notice {
         display: contents;
     }
